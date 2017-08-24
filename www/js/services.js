@@ -27,10 +27,10 @@ angular.module('kidney.services', ['ionic', 'ngResource'])
   appKey: 'fe7b9ba069b80316653274e4',
   crossKey: 'cf32b94444c4eaacef86903e',
   baseUrl: 'http://docker.haihonghospitalmanagement.com/api/v1/',
-  mediaUrl: 'http://ttt.go5le.net/uploads',
+  mediaUrl: 'http://df.haihonghospitalmanagement.com/uploads',
   socketUrl: 'http://docker.haihonghospitalmanagement.com/chat',
-  imgThumbUrl: 'http://ttt.go5le.net/uploads',
-  imgLargeUrl: 'http://ttt.go5le.net/uploads',
+  imgThumbUrl: 'http://df.haihonghospitalmanagement.com/uploads',
+  imgLargeUrl: 'http://df.haihonghospitalmanagement.com/uploads',
   cameraOptions: {
     cam: {
       quality: 60,
