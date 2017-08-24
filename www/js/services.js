@@ -2725,7 +2725,7 @@ angular.module('kidney.services', ['ionic', 'ngResource'])
   return self
 }])
 
-.factory('checknetwork', ['$q', '$ionicLoading', '$rootScope', '$injector', 'Storage', function ($q, $ionicLoading, $rootScope, $injector, Storage) {
+.factory('checknetwork', ['$q', '$ionicLoading', '$rootScope', '$injector', 'Storage', 'CONFIG', function ($q, $ionicLoading, $rootScope, $injector, Storage, CONFIG) {
   return {
     checknetwork: function (err) {
       $rootScope.$watch('online', function () {
@@ -2746,7 +2746,7 @@ angular.module('kidney.services', ['ionic', 'ngResource'])
       var $http = $injector.get('$http')
       $http({
         method: 'POST',
-        url: 'http://121.43.107.106:4050/api/v1/log ',
+        url: CONFIG.baseUrl + 'log',
         headers: {
           'Content-Type': 'application/json'
         },
