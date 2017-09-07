@@ -2075,7 +2075,6 @@ angular.module('kidney.services', ['ionic', 'ngResource'])
             })
     return deferred.promise
   }
-
     // params->0:{
             //      teamId:'teampost2',
             //      membersuserId:'id2'
